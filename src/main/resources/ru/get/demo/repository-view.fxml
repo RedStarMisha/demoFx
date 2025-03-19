@@ -4,10 +4,10 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="closeButton" layoutX="107.0" layoutY="312.0" mnemonicParsing="false" onAction="#close" text="Close" />
+      <Button fx:id="closeButton" layoutX="107.0" layoutY="312.0" mnemonicParsing="false" text="Close" />
       <ListView fx:id="userListView" layoutX="80.0" layoutY="42.0" prefHeight="200.0" prefWidth="366.0" />
+      <Button fx:id="sortButton" layoutX="300.0" layoutY="258.0" mnemonicParsing="false" text="sort" />
    </children>
 </AnchorPane>

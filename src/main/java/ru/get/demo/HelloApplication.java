@@ -15,13 +15,11 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class HelloApplication extends Application {
-    List<String> users = new ArrayList<>();
+    Set<String> users = new HashSet<>();
 
     @FXML
     Label lb_name_full;
@@ -56,7 +54,8 @@ public class HelloApplication extends Application {
             @Override
             public void handle(MouseEvent event) {
                 lb_name_full.setText(a1.getText() + " " + a2.getText());
-                users.add(a1.getText() + " " + a2.getText());
+                long time = System.currentTimeMillis();
+                users.add(a1.getText() + " " + a2.getText() + " " + time);
             }
         });
         reposotoryButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
